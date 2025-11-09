@@ -20,7 +20,7 @@ async function bootstrap() {
   const app = express();
  
   app.use(cors({
-  origin: 'http://localhost:8080', // Frontend ka URL
+  origin: 'https://contetn-sch.vercel.app/', // Frontend ka URL
   credentials: true, // IMPORTANT - cookies ke liye
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
@@ -85,3 +85,4 @@ bootstrap().catch((err) => {
   console.error("[server] fatal error:", err);
   process.exit(1);
 });
+
